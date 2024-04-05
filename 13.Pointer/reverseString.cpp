@@ -1,3 +1,4 @@
+#include<iostream>
 #include<string.h>
 using namespace std;
 void func(char *str) 
@@ -9,5 +10,19 @@ void func(char *str)
         *(str+i) = *(str+totalLen);
         *(str+totalLen) = temp;
         totalLen--;
+    }
+}
+
+int main()
+{
+    char ch[100001];
+    int t;
+    cin>>t;
+    while(t--)
+    {
+        cin>>ch;
+        func(ch);
+        cout<<ch;
+	cout<<endl;
     }
 }
