@@ -1,0 +1,20 @@
+Given k no. of different size arrays, which are sorted individually (in ascending order). You need to merge all the given arrays such that output array should be sorted (in ascending order).
+
+Hint : Use Heaps.
+Detailed explanation ( Input/output format, Notes, Images )
+Constraints:
+0 <= k <= 1000
+0 <= n1, n2 <= 10000
+Time Limit: 1 second
+Sample Input 1:
+4
+3
+1 5 9
+2
+45 90
+5
+2 6 78 100 234
+1
+0
+Sample Output 1:
+0 1 2 5 6 9 45 78 90 100 234
