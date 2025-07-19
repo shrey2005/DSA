@@ -10,14 +10,17 @@ int main() {
         int n;
         cin>>n;
         
-        set<int> elements;
+        unordered_map<int, int> elements;
+        int result = 0;
         for(int i = 0; i < n; i++){
             int value;
             cin>>value;
-            elements.insert(value);
+            elements[value]++;
+            int count = elements[value];
+            if(result < count){
+                result = count;
+            }
         }
-        
-        cout<<elements.size()<<endl;
+        cout<<n-result<<endl;
     }
 }
-
